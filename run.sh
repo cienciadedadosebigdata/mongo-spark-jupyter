@@ -11,11 +11,11 @@ fi
 echo "Starting docker ."
 docker-compose up -d --build
 
-function clean_up {
-    echo "\n\nShutting down....\n\n"
+#function clean_up {
+#    echo "\n\nShutting down....\n\n"
     
-    docker-compose down -v
-}
+#    docker-compose down -v
+#}
 
 trap clean_up EXIT
 
