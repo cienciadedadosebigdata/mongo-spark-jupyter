@@ -65,7 +65,7 @@ MongoDB Replica Set - port 27017-27019
 
 Use <ctrl>-c to quit'''
 
-read -r -d '' _ </dev/tty
+read -r '' _ </dev/tty
 echo '\n\nTearing down the Docker environment, please wait.\n\n'
 
 # if we don't specify -v then issue this one -> docker-compose exec mongo1 /usr/bin/mongo localhost:27017/SparkDemo --eval "db.dropDatabase()"
