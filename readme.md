@@ -68,7 +68,7 @@ We can see that the tx_time field is loaded as a string.  We can easily convert 
 
 Next, we can add a new ‘movingAverage’ column that will show a moving average based upon the previous value in the dataset.  To do this we leverage the PySpark Window function as follows:
 
-from pyspark.sql.window import Window
+`from pyspark.sql.window import Window
 from pyspark.sql import functions as F
 
 movAvg = df.withColumn("movingAverage", F.avg("price")
