@@ -17,7 +17,7 @@ docker-compose up -d --build
 #    docker-compose down -v
 #}
 
-trap clean_up EXIT
+#trap clean_up EXIT
 
 echo -e "\nConfiguring the MongoDB ReplicaSet.\n"
 docker-compose exec mongo1 /usr/bin/mongo --eval '''if (rs.status()["ok"] == 0) {
